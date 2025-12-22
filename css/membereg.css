@@ -1,0 +1,108 @@
+/* =========================
+   Registration Form Section
+   ========================= */
+
+/* Wrapper spacing */
+.form-wrapper {
+  margin: 3rem auto 4rem;
+}
+
+/* Info note */
+.info-note {
+  background: var(--light-green);
+  color: var(--gray);
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Main form card */
+.registration-form {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Fieldset reset + spacing */
+.registration-form fieldset {
+  border: none;
+  margin-bottom: 2.5rem;
+  padding: 0;
+}
+
+/* Section title */
+.registration-form legend {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 1.25rem;
+  padding-left: 0.75rem;
+  border-left: 5px solid var(--orange);
+}
+
+/* Labels */
+.registration-form label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-bottom: 0.25rem;
+}
+
+/* Inputs & textarea */
+.registration-form input,
+.registration-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+/* Focus state (important UX) */
+.registration-form input:focus,
+.registration-form textarea:focus {
+  outline: none;
+  border-color: var(--green);
+}
+
+/* Textarea resize */
+.registration-form textarea {
+  resize: vertical;
+}
+
+/* Submit area */
+.form-actions {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Primary button (form-specific use) */
+.btn-primary {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 0.85rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Hover (desktop only feel) */
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Mobile tweaks */
+@media (max-width: 576px) {
+  .registration-form {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}
