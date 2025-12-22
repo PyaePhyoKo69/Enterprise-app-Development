@@ -1,0 +1,84 @@
+/* ===========================
+   Footer
+=========================== */
+
+.main-footer {
+  background: var(--footer-bg-gradient);
+  padding-top: 60px;
+  color: var(--dark);
+}
+
+.main-footer a {
+  color: var(--dark);
+  text-decoration: underline;
+}
+
+.main-footer a:hover {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+.main-footer h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.main-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-footer ul li {
+  margin-bottom: 10px;
+}
+
+/* Subscribe */
+/* ===========================
+   Subscribe Form (Responsive)
+=========================== */
+
+.subscribe-form-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.input-group-pill {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 50px;
+  padding: 5px;
+  width: 100%;
+}
+
+.form-control-pill {
+  border: none !important;
+  background: transparent !important;
+  padding: 12px 20px;
+  flex: 1;
+  outline: none;
+  font-size: 0.9rem;
+  min-width: 0; /* 🔑 fixes overflow issue */
+}
+
+.btn-subscribe {
+  background-color: var(--footer-btn-color);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Social */
+.social-icons img {
+  max-width: 40px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  background-color: var(--orange);
+  color: white;
+  padding: 15px 0;
+}

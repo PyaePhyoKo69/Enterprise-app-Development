@@ -1,0 +1,52 @@
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar {
+  background-color: var(--light-green);
+}
+
+.nav-link {
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.nav-link:hover {
+  color: var(--orange);
+}
+
+/* Volunteer Button */
+.btn-hero-volunteer {
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-hero-volunteer:hover {
+  background-color: #e06a00;
+  color: var(--white);
+}
+
+/* Mobile Navbar */
+@media (max-width: 576px) {
+  .navbar-volunteer {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    order: 3;
+  }
+
+  .navbar ul.nav {
+    width: 100%;
+    order: 2;
+    flex-direction: column;
+  }
+
+  .navbar-brand {
+    order: 1;
+  }
+}

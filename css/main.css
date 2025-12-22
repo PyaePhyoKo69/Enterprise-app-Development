@@ -1,0 +1,19 @@
+:root {
+  --green: #28a745;
+  --orange: #ff7a00;
+  --dark: #333;
+  --white: #fff;
+  --light-green: #DCFCE7;
+  --gray: #6c757d;
+  --footer-bg-gradient: linear-gradient(to right, #63c77c, #52bd6b);
+  --footer-btn-color: #ff6600;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.btn {
+  font-weight: 600;
+}

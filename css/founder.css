@@ -1,0 +1,63 @@
+/* ===========================
+   Founders Section
+=========================== */
+.founders-section {
+  background: var(--light-green);
+  text-align: center;
+  padding: 70px 10%;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  margin-top: 10px;
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+/* Grid for founder cards */
+.founder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Individual founder card */
+.founder-card {
+  background: var(--white);
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+
+/* Founder image */
+.founder-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--green);
+  margin-bottom: 15px;
+}
+
+/* Founder name & role */
+.founder-card h3 {
+  margin-bottom: 5px;
+  color: var(--dark);
+}
+
+.founder-card p {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
