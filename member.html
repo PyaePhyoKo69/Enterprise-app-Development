@@ -42,84 +42,97 @@
   </div>
 </nav>
 
+   <main class="container form-wrapper">
 
-<main class="container form-wrapper">
-
-  <div class="info-note">
-    📍 Information provided here helps MerryMeal assess food needs and plan resources efficiently.
-  </div>
-
-  <!-- REAL FORM -->
-  <form 
-    class="registration-form"
-    data-form="member-caregiver"
-    method="POST"
-  >
-
-    <!-- MEMBER -->
-    <fieldset class="form-section">
-      <legend>Member Information</legend>
-
-      <div class="row g-3">
-        <div class="col-md-6">
-          <label for="member_name">Full Name</label>
-          <input id="member_name" name="member_name" type="text" required>
-        </div>
-
-        <div class="col-md-3">
-          <label for="member_age">Age</label>
-          <input id="member_age" name="member_age" type="number">
-        </div>
-
-        <div class="col-md-3">
-          <label for="meals_per_week">Meals / Week</label>
-          <input id="meals_per_week" name="meals_per_week" type="number">
-        </div>
-
-        <div class="col-md-6">
-          <label for="dietary">Dietary Requirements</label>
-          <input id="dietary" name="dietary" type="text">
-        </div>
-
-        <div class="col-12">
-          <label for="address">Address</label>
-          <textarea id="address" name="address" rows="3"></textarea>
-        </div>
-      </div>
-    </fieldset>
-
-    <!-- CAREGIVER -->
-    <fieldset class="form-section">
-      <legend>Caregiver Information</legend>
-
-      <div class="row g-3">
-        <div class="col-md-4">
-          <label for="caregiver_name">Caregiver Name</label>
-          <input id="caregiver_name" name="caregiver_name" type="text">
-        </div>
-
-        <div class="col-md-4">
-          <label for="caregiver_phone">Phone</label>
-          <input id="caregiver_phone" name="caregiver_phone" type="tel">
-        </div>
-
-        <div class="col-md-4">
-          <label for="caregiver_email">Email</label>
-          <input id="caregiver_email" name="caregiver_email" type="email">
-        </div>
-      </div>
-    </fieldset>
-
-    <div class="form-actions">
-      <button type="submit" class="btn-primary">
-        Submit Request
-      </button>
+  <!-- MEMBER REGISTRATION -->
+  <section class="registration-form-section">
+    <div class="info-note">
+      📍 Information provided here helps MerryMeal assess food needs and plan resources efficiently.
     </div>
 
-  </form>
+    <form class="registration-form" data-form="member" method="POST">
+      <fieldset class="form-section">
+        <legend>Member Registration</legend>
+
+        <div class="form-grid row g-3">
+          <div class="col-md-6">
+            <label for="member_name">Full Name</label>
+            <input id="member_name" name="member_name" type="text" required>
+          </div>
+
+          <div class="col-md-3">
+            <label for="member_age">Age</label>
+            <input id="member_age" name="member_age" type="number">
+          </div>
+
+          <div class="col-md-3">
+            <label for="meals_per_week">Meals / Week</label>
+            <input id="meals_per_week" name="meals_per_week" type="number">
+          </div>
+
+          <div class="col-md-6">
+            <label for="dietary">Dietary Requirements</label>
+            <input id="dietary" name="dietary" type="text">
+          </div>
+
+          <div class="col-12">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-actions text-center mt-4">
+        <button type="submit" class="btn-primary">Register Member</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- PARTNER REGISTRATION -->
+  <section class="registration-form-section mt-5">
+    <div class="info-note">
+      📍 Partner information helps MerryMeal plan partnerships efficiently.
+    </div>
+
+    <form class="registration-form" data-form="partner" method="POST">
+      <fieldset class="form-section">
+        <legend>Partner Registration</legend>
+
+        <div class="form-grid row g-3">
+          <div class="col-md-6">
+            <label for="partner_name">Organization Name</label>
+            <input id="partner_name" name="partner_name" type="text" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="partner_contact">Contact Person</label>
+            <input id="partner_contact" name="partner_contact" type="text">
+          </div>
+
+          <div class="col-md-6">
+            <label for="partner_email">Email</label>
+            <input id="partner_email" name="partner_email" type="email">
+          </div>
+
+          <div class="col-md-6">
+            <label for="partner_phone">Phone</label>
+            <input id="partner_phone" name="partner_phone" type="tel">
+          </div>
+
+          <div class="col-12">
+            <label for="partner_address">Address</label>
+            <textarea id="partner_address" name="partner_address" rows="3"></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-actions text-center mt-4">
+        <button type="submit" class="btn-primary">Register Partner</button>
+      </div>
+    </form>
+  </section>
 
 </main>
-
 </body>
 <footer class="main-footer text-dark pt-5">
   <div class="container">
