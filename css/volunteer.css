@@ -1,0 +1,180 @@
+/* =========================
+   Volunteer & Events Page
+=========================== */
+
+/* Page wrapper spacing */
+.container-volunteer {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Events list | Volunteer form */
+  gap: 40px;
+  padding: 60px 10%;
+}
+
+@media(max-width: 900px) {
+  .container-volunteer {
+    grid-template-columns: 1fr;
+    padding: 40px 5%;
+  }
+}
+
+/* Event Card */
+.event-card {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+
+.event-info h3 {
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+.event-meta {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+.event-btn {
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.event-btn:hover {
+  opacity: 0.9;
+}
+
+/* Volunteer Form Card */
+.form-card {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.form-card h2 {
+  margin-bottom: 20px;
+  color: var(--orange);
+}
+
+.form-card label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 5px;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.submit-btn {
+  background: var(--green);
+  color: var(--white);
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, var(--light-orange), #ffffff);
+  padding: 60px 10%;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 2.5rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+
+/* Volunteer Form Card */
+.form-card {
+  background: var(--white);        
+  border-radius: 18px;             
+  padding: 30px;                   
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
+}
+
+/* Form Heading */
+.form-card h2 {
+  margin-bottom: 20px;
+  color: var(--orange);
+}
+
+/* Labels */
+.form-card label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 5px;
+}
+
+/* Inputs */
+.form-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+/* Submit Button */
+.submit-btn {
+  background: var(--green);
+  color: var(--white);
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
