@@ -153,3 +153,130 @@
   background: #e66a10;
 }
 
+/* ===========================
+   Donation Form
+=========================== */
+
+.form-wrapper {
+  margin: 3rem auto 4rem;
+}
+
+/* Donation form card */
+.donation-form {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Fieldset */
+.donation-form fieldset {
+  border: none;
+  margin-bottom: 2.5rem;
+  padding: 0;
+}
+
+/* Legend */
+.donation-form legend {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 1.5rem;
+  padding-left: 10px;
+  border-left: 5px solid var(--orange);
+}
+
+/* Donation cards grid */
+.donation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+/* Donation card */
+.donation-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Hide radio */
+.donation-card input {
+  display: none;
+}
+
+/* Hover */
+.donation-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Selected state */
+.donation-card input:checked + h3,
+.donation-card input:checked ~ .price {
+  color: var(--green);
+}
+
+.donation-card input:checked ~ * {
+  font-weight: 600;
+}
+
+.donation-card input:checked {
+  border-color: var(--orange);
+}
+
+/* Price */
+.donation-card .price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--orange);
+  margin: 10px 0;
+}
+
+/* Inputs */
+.donation-form label {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.donation-form input[type="number"] {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  margin-top: 8px;
+}
+
+/* Submit */
+.form-actions {
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--orange);
+  color: var(--white);
+  padding: 0.85rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .donation-form {
+    padding: 1.5rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}

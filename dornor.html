@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>MerryOnWheel</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/dornor-partaner.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+
+
+<body>
+
+    
+
+    <!-- ==========================Navigation==============================-->
+  <nav class="navbar bg-white shadow-sm py-3">
+  <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-md-center">
+
+    <!-- Left: Logo -->
+    <a class="navbar-brand fw-bold text-success mb-2 mb-md-0" href="#">MerryOnWheel</a>
+
+    <!-- Center: Menu links -->
+    <ul class="nav flex-column flex-sm-row">
+      <li class="nav-item">
+        <a class="nav-link fw-bold text-dark" href="#">Member</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bold text-dark" href="#">Donate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bold text-dark" href="#">Register</a>
+      </li>
+    </ul>
+
+    <!-- Right: Volunteer button -->
+    <a class="btn-hero-volunteer navbar-volunteer" href="#">Volunteer</a>
+  </div>
+</nav>
+
+<section class="page-header text-center">
+  <h1>Donate or Partner with MerryMeal</h1>
+  <p>Your support helps us deliver meals to those in need.</p>
+</section>
+
+
+<main class="container form-wrapper">
+
+  <form class="donation-form" method="POST" action="/donate">
+
+    <!-- Donation Plans -->
+    <fieldset class="form-section">
+      <legend>Select a Donation Plan</legend>
+
+      <div class="donation-grid">
+
+        <label class="donation-card">
+          <input type="radio" name="donation_plan" value="Daily_50">
+          <h3>Daily Meals</h3>
+          <p class="price">$50</p>
+          <p>Provide meals for one person for a day.</p>
+        </label>
+
+        <label class="donation-card">
+          <input type="radio" name="donation_plan" value="weekly_200" required>
+          <h3>Weekly Meals</h3>
+          <p class="price">$200</p>
+          <p>Provide meals for one person for a week.</p>
+        </label>
+
+        <label class="donation-card">
+          <input type="radio" name="donation_plan" value="monthly_800">
+          <h3>Monthly Meals</h3>
+          <p class="price">$800</p>
+          <p>Support meals for an entire month.</p>
+        </label>
+
+        
+
+      </div>
+    </fieldset>
+
+    <!-- Custom Amount -->
+    <fieldset class="form-section">
+      <legend>Custom Amount (Optional)</legend>
+
+      <label for="custom_amount">Enter Amount ($)</label>
+      <input
+        type="number"
+        id="custom_amount"
+        name="custom_amount"
+        placeholder="e.g. 150"
+        min="1"
+      >
+    </fieldset>
+
+    <!-- Submit -->
+    <div class="form-actions">
+      <button type="submit" class="btn-primary">
+        Donate Now
+      </button>
+    </div>
+
+  </form>
+
+</main>
+
+<section class="partner-section">
+  <div class="container">
+
+    <div class="partner-card">
+      <h2 class="partner-title">Partner With MerryMeal</h2>
+      <p class="partner-subtitle">
+        Organizations and businesses can support us through funding or food partnerships.
+      </p>
+
+      <form method="POST" action="/partner/register" class="partner-form">
+
+        <div class="form-grid">
+          <div>
+            <label for="partner_org">Organization Name</label>
+            <input
+              type="text"
+              id="partner_org"
+              name="partner_org"
+              required
+            >
+          </div>
+
+          <div>
+            <label for="partner_type">Partnership Type</label>
+            <select id="partner_type" name="partner_type" required>
+              <option value="">Select type</option>
+              <option value="donation">Donation Partner</option>
+              <option value="food">Food Provider</option>
+              <option value="sponsor">Sponsor</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="partner_contact">Contact Person</label>
+            <input
+              type="text"
+              id="partner_contact"
+              name="partner_contact"
+              required
+            >
+          </div>
+
+          <div>
+            <label for="partner_email">Email</label>
+            <input
+              type="email"
+              id="partner_email"
+              name="partner_email"
+              required
+            >
+          </div>
+
+          <div>
+            <label for="partner_phone">Phone</label>
+            <input
+              type="tel"
+              id="partner_phone"
+              name="partner_phone"
+            >
+          </div>
+
+          <div class="full-width">
+            <label for="partner_message">Message (optional)</label>
+            <textarea
+              id="partner_message"
+              name="partner_message"
+              rows="4"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">
+            Submit Partnership Request
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+</body>
+<footer class="main-footer text-dark pt-5">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Newsletter / Company Info + Social Icons -->
+      <div class="col-lg-5 col-md-6">
+        <h5 class="fw-bold">Get Exclusive Deals in your Inbox</h5>
+        <form class="subscribe-form-container mt-3 mb-2">
+          <div class="input-group-pill">
+            <input type="email" class="form-control-pill" placeholder="youremail@gmail.com">
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+          </div>
+</form>
+
+        <!-- Social Icons Below Subscribe -->
+        <div class="social-icons d-flex mt-3 gap-3">
+          <a href="#"><img src="fb-icon.svg" alt="Facebook"></a>
+          <a href="#"><img src="ig-icon.svg" alt="Instagram"></a>
+          <a href="#"><img src="tiktok-icon.svg" alt="TikTok"></a>
+          <a href="#"><img src="snap-icon.svg" alt="Snapchat"></a>
+        </div>
+
+        <p class="small mt-3 mb-1">We won't spam, read our <a href="#">email policy</a></p>
+        <p class="small">Company # 490039-445,<br>Registered with House of companies.</p>
+      </div>
+
+      <!-- Legal Pages -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold">Legal Pages</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Modern Slavery Statement</a></li>
+        </ul>
+      </div>
+
+      <!-- Important Links -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="fw-bold">Important Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Get help</a></li>
+          <li><a href="#">Add your restaurant</a></li>
+          <li><a href="#">Sign up to deliver</a></li>
+          <li><a href="#">Create a business account</a></li>
+        </ul>
+      </div>
+
+    </div> 
+
+  </div> 
+
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom  text-white py-3 mt-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0 small">Order.uk © 2024, All Rights Reserved.</p>
+      <div class="bottom-links d-flex flex-wrap justify-content-center justify-content-md-end gap-3">
+        <a href="#" class="text-white text-decoration-none small">Privacy Policy</a>
+        <a href="#" class="text-white text-decoration-none small">Terms</a>
+        <a href="#" class="text-white text-decoration-none small">Pricing</a>
+        <a href="#" class="text-white text-decoration-none small">Do not sell or share my personal information</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</footer>
+</html>
