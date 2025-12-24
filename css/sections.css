@@ -334,3 +334,31 @@
     font-size: 2rem;
   }
 }
+
+/* Normalize select dropdown to match inputs */
+.registration-form select {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 0.75rem; /* extra right space */
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: #fff;
+
+  /* Remove ugly browser defaults */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Custom arrow */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='%236b7280' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 7.5l4.5 4.5 4.5-4.5' stroke='%236b7280' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  background-size: 14px;
+}
+
+/* Focus state (same as inputs) */
+.registration-form select:focus {
+  outline: none;
+  border-color: var(--green);
+}

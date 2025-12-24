@@ -95,47 +95,70 @@
 
   <!-- PARTNER REGISTRATION -->
   <section class="registration-form-section mt-5">
-    <div class="info-note">
-      📍 Partner information helps MerryMeal plan partnerships efficiently.
-    </div>
+  <div class="info-note">
+    📍 Caregiver information helps MerryMeal assign the right support and manage care services effectively.
+  </div>
 
-    <form class="registration-form" data-form="partner" method="POST">
-      <fieldset class="form-section">
-        <legend>Partner Registration</legend>
+  <form class="registration-form" data-form="caregiver" method="POST">
+    <fieldset class="form-section">
+      <legend>Caregiver Registration</legend>
 
-        <div class="form-grid row g-3">
-          <div class="col-md-6">
-            <label for="partner_name">Organization Name</label>
-            <input id="partner_name" name="partner_name" type="text" required>
-          </div>
+      <div class="form-grid row g-3">
 
-          <div class="col-md-6">
-            <label for="partner_contact">Contact Person</label>
-            <input id="partner_contact" name="partner_contact" type="text">
-          </div>
+        <!-- Caregiver Name -->
+        <div class="col-md-6">
+          <label for="caregiver_name">Full Name</label>
+          <input id="caregiver_name" name="caregiver_name" type="text" required>
+        </div>
 
-          <div class="col-md-6">
-            <label for="partner_email">Email</label>
-            <input id="partner_email" name="partner_email" type="email">
-          </div>
+        <!-- Email -->
+        <div class="col-md-6">
+          <label for="caregiver_email">Email</label>
+          <input id="caregiver_email" name="caregiver_email" type="email" required>
+        </div>
 
-          <div class="col-md-6">
-            <label for="partner_phone">Phone</label>
-            <input id="partner_phone" name="partner_phone" type="tel">
-          </div>
+        <!-- Position Dropdown -->
+        <div class="col-md-6">
+          <label for="caregiver_position">Position</label>
+          <select id="caregiver_position" name="caregiver_position" required>
+            <option value="" disabled selected>Select position</option>
+            <option value="nurse">Nurse</option>
+            <option value="assistant">Care Assistant</option>
+            <option value="volunteer">Volunteer Caregiver</option>
+            <option value="coordinator">Care Coordinator</option>
+          </select>
+        </div>
 
-          <div class="col-12">
-            <label for="partner_address">Address</label>
-            <textarea id="partner_address" name="partner_address" rows="3"></textarea>
+        <!-- Phone -->
+        <div class="col-md-6">
+          <label for="caregiver_phone">Phone</label>
+          <input id="caregiver_phone" name="caregiver_phone" type="tel">
+        </div>
+
+        <!-- Gender -->
+        <div class="col-12">
+          <label>Gender</label>
+          <div class="d-flex gap-4 mt-1">
+            <label class="d-flex align-items-center gap-2">
+              <input type="radio" name="caregiver_gender" value="male" required>
+              Male
+            </label>
+            <label class="d-flex align-items-center gap-2">
+              <input type="radio" name="caregiver_gender" value="female">
+              Female
+            </label>
           </div>
         </div>
-      </fieldset>
 
-      <div class="form-actions text-center mt-4">
-        <button type="submit" class="btn-primary">Register Partner</button>
       </div>
-    </form>
-  </section>
+    </fieldset>
+
+    <div class="form-actions text-center mt-4">
+      <button type="submit" class="btn-primary">Register Caregiver</button>
+    </div>
+  </form>
+</section>
+
 
 </main>
 
