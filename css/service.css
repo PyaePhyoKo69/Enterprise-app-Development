@@ -3,6 +3,7 @@
 =========================== */
 .services-section {
   padding: 70px 10%;
+  cursor: pointer;
 }
 
 .section-title {

@@ -5,6 +5,7 @@
   background: var(--light-green);
   text-align: center;
   padding: 70px 10%;
+  cursor: pointer;
 }
 
 .section-title {

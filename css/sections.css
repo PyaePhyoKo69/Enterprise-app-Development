@@ -280,3 +280,57 @@
     width: 100%;
   }
 }
+
+/* Popup overlay */
+.thank-you-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* soft shadow */
+  display: none; /* hidden initially */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup card matches registration form style */
+.thank-you-popup .popup-content {
+  background: var(--white);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--green);
+  max-width: 400px;
+  width: 90%;
+  animation: popupScale 0.3s ease;
+}
+
+/* Icon */
+.thank-you-popup .popup-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--orange);
+  display: block;
+}
+
+/* Simple popup scale animation */
+@keyframes popupScale {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Mobile tweaks */
+@media (max-width: 576px) {
+  .thank-you-popup .popup-content {
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+  }
+
+  .thank-you-popup .popup-icon {
+    font-size: 2rem;
+  }
+}

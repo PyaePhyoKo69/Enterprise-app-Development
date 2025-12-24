@@ -7,12 +7,15 @@
 }
 
 .nav-link {
+  display: inline-block;
   font-weight: 700;
   color: var(--dark);
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .nav-link:hover {
-  color: var(--orange);
+  color: var(--orange) !important;
+  transform: translateY(-2px);
 }
 
 /* Volunteer Button */
@@ -24,6 +27,8 @@
   border-radius: 8px;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-hero-volunteer:hover {
