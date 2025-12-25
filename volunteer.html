@@ -23,15 +23,15 @@
   <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-md-center">
 
     <!-- Left: Logo -->
-    <a class="navbar-brand fw-bold text-success mb-2 mb-md-0" href="#">MerryOnWheel</a>
+    <a class="navbar-brand fw-bold text-success mb-2 mb-md-0" href="index.html">MerryOnWheel</a>
 
     <!-- Center: Menu links -->
     <ul class="nav flex-column flex-sm-row">
       <li class="nav-item">
-        <a class="nav-link fw-bold text-dark" href="#">Member</a>
+        <a class="nav-link fw-bold text-dark" href="member.html">Member</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fw-bold text-dark" href="#">Donate</a>
+        <a class="nav-link fw-bold text-dark" href="dornor.html">Donate</a>
       </li>
       <li class="nav-item">
         <a class="nav-link fw-bold text-dark" href="#">Register</a>
@@ -39,14 +39,14 @@
     </ul>
 
     <!-- Right: Volunteer button -->
-    <a class="btn-hero-volunteer navbar-volunteer" href="#">Volunteer</a>
+    <a class="btn-hero-volunteer navbar-volunteer" href="volunteer.html">Volunteer</a>
   </div>
 </nav>
 
-<section class="container-volunteer">
+<section class="container-volunteer" id="volunteerContainer">
 
   <!-- Events List -->
-  <div>
+  <div id="eventsColumn">
     <div class="event-card" data-event-id="1">
       <div class="event-info">
         <h3>Community Meal Preparation</h3>
@@ -65,19 +65,20 @@
   </div>
 
   <!-- Volunteer Registration Form -->
-  <div class="form-card">
+  <div class="form-card" id="volunteerFormCard">
     <h2>Volunteer Registration</h2>
-    <form method="POST" action="/register-volunteer">
-      <input type="hidden" name="event_id" value="">
+
+    <form class="volunteer-form">
+      <input type="hidden" name="event_id" id="event_id">
 
       <label>Full Name</label>
-      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="name" required>
 
       <label>Email</label>
-      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="email" name="email" required>
 
       <label>Phone</label>
-      <input type="tel" name="phone" placeholder="Contact Number" required>
+      <input type="tel" name="phone" required>
 
       <button type="submit" class="submit-btn">Sign Up</button>
     </form>
@@ -139,7 +140,7 @@
 
   </div> 
 
-
+  <script src="js/volunteer.js"></script>
   <!-- Footer Bottom -->
   <div class="footer-bottom  text-white py-3 mt-4">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">

@@ -1,11 +1,11 @@
-// Select elements
+
 const eventButtons = document.querySelectorAll('.event-btn');
 const volunteerForm = document.querySelector('.volunteer-form');
 const eventIdInput = document.getElementById('event_id');
 const formCard = document.getElementById('volunteerFormCard');
 const container = document.getElementById('volunteerContainer');
 
-// When clicking "Register" on an event
+
 eventButtons.forEach(button => {
   button.addEventListener('click', () => {
     const eventId = button.dataset.eventId;
@@ -29,13 +29,11 @@ volunteerForm.addEventListener('submit', function (e) {
   console.log('Volunteer registration data:', data);
   alert('Thanks for registering!');
 
-  // Hide form
+
   formCard.style.display = 'none';
 
-  // Expand events to full width
   container.classList.add('full-width');
 
-  // Clear form
   volunteerForm.reset();
 
   // =========================

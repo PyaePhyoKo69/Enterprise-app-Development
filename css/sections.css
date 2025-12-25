@@ -61,19 +61,16 @@
   font-size: 0.95rem;
 }
 
-/* Focus state (important UX) */
 .registration-form input:focus,
 .registration-form textarea:focus {
   outline: none;
   border-color: var(--green);
 }
 
-/* Textarea resize */
 .registration-form textarea {
   resize: vertical;
 }
 
-/* Submit area */
 .form-actions {
   text-align: center;
   margin-top: 2rem;
@@ -91,7 +88,6 @@
   cursor: pointer;
 }
 
-/* Hover (desktop only feel) */
 .btn-primary:hover {
   opacity: 0.9;
 }
@@ -109,7 +105,6 @@
 
 /* sections.css */
 
-/* Separate registration sections */
 .registration-form-section {
   background: var(--white);
   padding: 2.5rem;
@@ -118,7 +113,6 @@
   margin-bottom: 3rem;
 }
 
-/* Info notes for each section */
 .registration-form-section .info-note {
   background: var(--light-green);
   padding: 1rem;
@@ -127,7 +121,6 @@
   margin-bottom: 1.5rem;
 }
 
-/* Fieldsets */
 .registration-form .form-section legend {
   font-size: 1.25rem;
   font-weight: 600;
@@ -137,7 +130,6 @@
   margin-bottom: 1rem;
 }
 
-/* Submit buttons */
 .registration-form .btn-primary {
   background: var(--orange);
   color: var(--white);
@@ -169,14 +161,14 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* Fieldset */
+
 .donation-form fieldset {
   border: none;
   margin-bottom: 2.5rem;
   padding: 0;
 }
 
-/* Legend */
+
 .donation-form legend {
   font-size: 1.25rem;
   font-weight: 600;
@@ -186,7 +178,7 @@
   border-left: 5px solid var(--orange);
 }
 
-/* Donation cards grid */
+
 .donation-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -205,17 +197,17 @@
   transition: all 0.3s ease;
 }
 
-/* Hide radio */
+
 .donation-card input {
   display: none;
 }
 
-/* Hover */
+
 .donation-card:hover {
   transform: translateY(-5px);
 }
 
-/* Selected state */
+
 .donation-card input:checked + h3,
 .donation-card input:checked ~ .price {
   color: var(--green);
@@ -229,7 +221,7 @@
   border-color: var(--orange);
 }
 
-/* Price */
+
 .donation-card .price {
   font-size: 1.8rem;
   font-weight: 700;
@@ -237,7 +229,7 @@
   margin: 10px 0;
 }
 
-/* Inputs */
+
 .donation-form label {
   font-size: 0.85rem;
   color: var(--gray);
@@ -281,7 +273,7 @@
   }
 }
 
-/* Popup overlay */
+
 .thank-you-popup {
   position: fixed;
   top: 0;
@@ -295,7 +287,6 @@
   z-index: 9999;
 }
 
-/* Popup card matches registration form style */
 .thank-you-popup .popup-content {
   background: var(--white);
   padding: 2rem 3rem;
@@ -317,13 +308,12 @@
   display: block;
 }
 
-/* Simple popup scale animation */
 @keyframes popupScale {
   0% { transform: scale(0.7); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
 }
 
-/* Mobile tweaks */
+
 @media (max-width: 576px) {
   .thank-you-popup .popup-content {
     padding: 1.5rem 2rem;
@@ -335,22 +325,21 @@
   }
 }
 
-/* Normalize select dropdown to match inputs */
+
 .registration-form select {
   width: 100%;
-  padding: 0.75rem 2.5rem 0.75rem 0.75rem; /* extra right space */
+  padding: 0.75rem 2.5rem 0.75rem 0.75rem; 
   border-radius: 8px;
   border: 1px solid #d1d5db;
   font-family: inherit;
   font-size: 0.95rem;
   background-color: #fff;
 
-  /* Remove ugly browser defaults */
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  /* Custom arrow */
+
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='%236b7280' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 7.5l4.5 4.5 4.5-4.5' stroke='%236b7280' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 0.9rem center;
