@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // ✅ TESTING
+      // TESTING
       console.log("Donation data:", donationData);
       alert("Thank you for your donation!");
 

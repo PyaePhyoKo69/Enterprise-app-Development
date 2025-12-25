@@ -13,3 +13,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
   });
 });
+
+/************************************
+ * NAVBAR USERNAME
+ ************************************/
+document.addEventListener('DOMContentLoaded', () => {
+  const adminName = localStorage.getItem('loggedInAdmin');
+  const navRegister = document.querySelector('.nav-register');
+
+  if (adminName && navRegister) {
+    navRegister.textContent = adminName;
+    navRegister.href = 'admin-dashboard.html';
+  }
+});

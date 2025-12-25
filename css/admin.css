@@ -1,0 +1,93 @@
+/* =========================
+   Admin Auth Page
+========================= */
+
+.admin-auth-body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--light-orange), #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center container */
+.admin-auth-container {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Card */
+.admin-auth-card {
+  max-width: 420px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Title */
+.admin-title {
+  color: var(--green);
+  margin-bottom: 5px;
+}
+
+.admin-subtitle {
+  color: var(--gray);
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+/* Tabs */
+.auth-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #f3f4f6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: var(--orange);
+  color: var(--white);
+}
+
+/* Forms */
+.auth-form {
+  display: none;
+  text-align: left;
+}
+
+.auth-form.active {
+  display: block;
+}
+
+.auth-form label {
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-bottom: 5px;
+  display: block;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-family: inherit;
+}
+
+/* Button */
+.auth-form .btn-primary {
+  width: 100%;
+}

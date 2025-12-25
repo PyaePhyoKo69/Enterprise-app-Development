@@ -8,7 +8,7 @@ document.querySelectorAll('.registration-form').forEach(form => {
     console.log('Form data ready to send:', data);
     alert('Form submitted (test)! Check console for data.');
 
-    // Uncomment this for real backend later
+    //  real backend later
     /*
     fetch('/your-backend-endpoint', {
       method: 'POST',
